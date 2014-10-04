@@ -1,0 +1,8 @@
+﻿<Window x:Class="Block_Escape.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Block Escape" Height="700" Width="1000" ResizeMode="CanMinimize" Left="50" Top="10" Closing="Event_Closing" Icon="Icon1.ico">
+    <Grid>
+        <Canvas Name="mCanvasPrincipal"/>
+    </Grid>
+</Window>

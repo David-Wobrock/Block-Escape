@@ -1,0 +1,25 @@
+﻿<Window x:Class="Block_Escape.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Block Escape - The Game" Height="300" Width="250" ResizeMode="NoResize" Icon="Icon1.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!-- First row : title (stack panel) -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Welcome To" Style="{StaticResource TextBlockStyle}"/>
+            <TextBlock Text="Block Escape" Style="{StaticResource TextBlockStyle}" FontSize="40" FontStyle="Italic" Foreground="DarkRed"/>
+            <TextBlock Text="Main menu" Style="{StaticResource TextBlockStyle}" Margin="10" FontSize="25" TextDecorations="Underline"/>
+        </StackPanel>
+        <!-- Buttons -->
+        <Button Grid.Row="1" Style="{StaticResource ButtonStyle}" Click="Event_Play">
+            <TextBlock Text="Play" Style="{StaticResource TextBlockStyle}"/>
+        </Button>
+        <Button Grid.Row="2" Style="{StaticResource ButtonStyle}" Click="Event_CloseApplication">
+            <TextBlock Text="Quit" Style="{StaticResource TextBlockStyle}"/>
+        </Button>
+    </Grid>
+</Window>
